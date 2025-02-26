@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Martian mono";
+    src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf")
+        format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-stretch: 25% 151%;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --neutral-900: 194.3 77.8% 10.6%;
+    --neutral-700: 194.5 22.8% 28.4%;
+    --neutral-200: 17.1 12.3% 88.8%;
+    --neutral-100: 17.1 41.2% 96.7%;
+    --neutral-0: 0 0% 100%;
+    --light-salmon-500: 21.8 98.6% 71.6%;
+    --light-salmon-100: 22.2 100% 91%;
+    --light-salmon-50: 22.2 100% 96.9%;
+    --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+    --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+
+    --space-0: 0;
+    --space-025: 2px;
+    --space-05: 4px;
+    --space-075: 6px;
+    --space-1: 8px;
+    --space-15: 12px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+    --space-6: 48px;
+    --space-7: 56px;
+    --space-8: 64px;
+    --space-9: 72px;
+    --space-10: 80px;
+
+    --radius-0: 0;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+    --radius-full: 999px;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    font-family: "Martian mono", monospace;
+    background-image: url("./assets/images/pattern-light-bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
