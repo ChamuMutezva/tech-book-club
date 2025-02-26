@@ -30,7 +30,7 @@ export function GrowTogether() {
                     />
                     <img
                         className="grow-together-image"
-                        src={readTogetherMobile || "/placeholder.svg"}
+                        src={readTogetherMobile}
                         alt="Tech book club members reading together"
                     />
                 </picture>

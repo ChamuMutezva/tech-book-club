@@ -1,62 +1,62 @@
-import arrowDown from "/assets/images/icon-arrow-down.svg";
-import avatars from "/assets/images/image-avatars.webp";
-import star from "/assets/images/icon-star.svg";
 import heroImageMobile from "/assets/images/image-hero-mobile.webp";
 import heroImageTablet from "/assets/images/image-hero-tablet.webp";
 import heroImageDesktop from "/assets/images/image-hero-desktop.webp";
+import arrowDown from "/assets/images/icon-arrow-down.svg";
+import avatars from "/assets/images/image-avatars.webp";
+import star from "/assets/images/icon-star.svg";
 
 export function Hero() {
     return (
-        <section className="container mx-auto px-4 py-12 lg:py-24">
-            <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                <div className="space-y-6">
-                    <h1 className="text-4xl font-bold tracking-tight lg:text-6xl">
-                        Join the ultimate tech book club
-                    </h1>
-                    <p className="text-lg text-muted-foreground">
+        <section className="hero px-4 md:px-6 lg:px-8 max-w-[90rem] mx-auto">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+                {/* Content */}
+                <div className="flex-1 text-center lg:text-left">
+                    <h1>Join the ultimate tech book club</h1>
+                    <p>
                         Turn your reading time into learning time with fellow
                         tech enthusiasts. Get curated recommendations, join
                         vibrant discussions, and level up your skills one
                         chapter at a time.
                     </p>
-                    <button type="button" className="gap-2">
-                        Review membership options{" "}
-                        <img src={arrowDown} alt="" className="inline-block" />
+                    <button type="button" className="btn-primary">
+                        Review membership options <img src={arrowDown} alt="" />
                     </button>
-                    <div className="flex items-center gap-4">
-                        <img src={avatars} alt="" width={150} height={50} />
-                        <div className="space-y-1">
-                            <div className="flex gap-1">
-                                {[...Array(5)].map((_, i) => (
+                    <div className="ratings-container flex items-center justify-center lg:justify-start">
+                        <img
+                            src={avatars}
+                            alt=""
+                            className="max-w-full"
+                        />
+                        <div className="ratings flex flex-col items-baseline">
+                            <div className="stars flex">
+                                {[...Array(5)].map((_, index) => (
                                     <img
-                                        key={i}
+                                        key={index}
                                         src={star}
                                         alt=""
-                                        width={20}
-                                        height={20}
                                     />
                                 ))}
                             </div>
-                            <p className="text-sm text-muted-foreground">
-                                200+ developers joined already
-                            </p>
+                            <p>200+ developers joined already</p>
                         </div>
                     </div>
                 </div>
-                <div className="relative aspect-video">
-                    <picture>
+
+                {/* Image */}
+                <div className="flex-1 mt-8 lg:mt-0">
+                    <picture className="block w-full">
                         <source
-                            media="(min-width: 1024px)"
+                            media="(min-width: 64rem)"
                             srcSet={heroImageDesktop}
                         />
                         <source
-                            media="(min-width: 768px)"
+                            media="(min-width: 48rem)"
                             srcSet={heroImageTablet}
                         />
                         <img
-                            src={heroImageMobile || "/placeholder.svg"}
+                            className="w-full h-auto object-cover rounded-lg"
+                            src={heroImageMobile}
                             alt="Tech book club members reading and assisting each other"
-                            className="object-cover rounded-lg"
                         />
                     </picture>
                 </div>
