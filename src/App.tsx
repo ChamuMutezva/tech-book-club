@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import "./App.css";
+import "./index.css";
 import { MembershipTiers } from "./components/MembershipTier";
 import { Footer } from "./components/Footer";
 import { GrowTogether } from "./components/GrowTogether";
@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <Header />
-            <main>
+            <main className="mt-[var(--space-4)] mx-auto">
                 <Hero />
                 <GrowTogether />
                 <MembershipTiers />

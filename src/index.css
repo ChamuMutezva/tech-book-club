@@ -9,8 +9,25 @@
     font-stretch: 25% 151%;
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf")
+        format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/Inter-Italic-VariableFont_opsz\,wght.ttf")
+        format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-stretch: 25% 151%;
+}
+
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -76,13 +93,9 @@ body {
     background-image: url("./assets/images/pattern-light-bg.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 0;
-    display: flex;
-    place-items: center;
+    margin: 0;  
     min-width: 320px;
     min-height: 100vh;
-    padding-inline: 1rem;
-    padding-block: 1.5rem;
 }
 
 h1 {
@@ -91,13 +104,8 @@ h1 {
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
+    border-radius: 8px;   
+    padding: 0.6em;
     cursor: pointer;
     transition: border-color 0.25s;
 }
@@ -109,6 +117,69 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
+.btn-primary {
+    background-color: hsl(var(--light-salmon-50));
+}
+
+.text-preset-1 {
+    font-size: 2.375rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+.text-preset-2 {
+    font-size: 2.125rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+.text-preset-3 {
+    font-size: 2.125rem;
+    line-height: 1.3;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.text-preset-4 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.text-preset-5 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+.text-preset-5sb {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+.text-preset-6 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.text-preset-7 {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.text-gradient {
+    background-image: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
@@ -117,7 +188,5 @@ button:focus-visible {
     a:hover {
         color: #747bff;
     }
-    button {
-        background-color: #f9f9f9;
-    }
+
 }
