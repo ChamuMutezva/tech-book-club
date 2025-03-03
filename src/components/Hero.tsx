@@ -7,7 +7,7 @@ import star from "/assets/images/icon-star.svg";
 
 export function Hero() {
     return (
-        <section className="hero md:px-6  mx-auto px-[var(--space-2)] py-[var(--space-3)] lg:px-8 max-w-[74rem]">
+        <section className="hero mx-auto p-[var(--space-2)] md:px-6 lg:px-8 max-w-[74rem]">
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}
                 <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left">

@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <Header />
-            <main className="mt-[var(--space-4)] mx-auto">
+            <main className="mx-auto">
                 <Hero />
                 <GrowTogether />
                 <MembershipTiers />

@@ -6,7 +6,9 @@ import linkedin from "/assets/images/logo-linkedin.svg";
 
 export function Footer() {
     return (
-        <footer className="bg-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-0))] rounded-t-2xl">
+        <footer className={`bg-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-0))] rounded-t-2xl
+         bg-[url("/assets/images/pattern-dark-bg.svg")]
+        `}>
             <div className="mx-auto px-4 py-12">
                 <div className="mx-auto">
                     {/* CTA Section */}
@@ -53,10 +55,10 @@ export function Footer() {
                     </div>
 
                     {/* Copyright */}
-                    <div className="text-center pt-6 border-t border-[hsl(var(--neutral-700))] flex justify-center">
+                    <div className="text-center  flex justify-center">
                         <div
-                            className=" w-full max-w-[74rem] flex flex-col md:flex-row 
-                             items-center justify-center md:justify-between gap-4"
+                            className=" w-full max-w-[74rem] flex flex-col md:flex-row border-t border-[hsl(var(--neutral-700))]
+                             items-center justify-center md:justify-between gap-4 pt-6"
                         >
                             <p className="text-sm text-muted-foreground">
                                 © 2024 - Tech Book Club
