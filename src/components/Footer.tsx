@@ -6,19 +6,21 @@ import linkedin from "/assets/images/logo-linkedin.svg";
 
 export function Footer() {
     return (
-        <footer className={`bg-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-0))] rounded-t-2xl
+        <footer
+            className={`bg-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-0))] rounded-t-2xl
          bg-[url("/assets/images/pattern-dark-bg.svg")]
-        `}>
+        `}
+        >
             <div className="mx-auto px-4 py-12">
                 <div className="mx-auto">
                     {/* CTA Section */}
                     <div className="text-center space-y-6 mb-12">
-                        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+                        <h2 className="text-preset-2 max-w-[25ch] mx-auto">
                             Ready to debug your reading list?
                         </h2>
                         <div className="flex items-center justify-center gap-2">
-                            <button
-                                type="button"
+                            <a
+                                href="#membership"
                                 className="flex items-center justify-center border-2 border-[hsl(var(--neutral-0))]"
                             >
                                 Review membership options{" "}
@@ -27,25 +29,23 @@ export function Footer() {
                                     alt=""
                                     className="transition-transform group-hover:translate-y-1"
                                 />
-                            </button>
+                            </a>
                         </div>
                     </div>
 
                     {/* Ratings Section */}
-                    <div className="flex flex-col items-center justify-center gap-4 mb-12 md:flex-row">
-                        <img
-                            src={avatars}
-                            alt="Member avatars"
-                            className="rounded-full"
-                        />
-                        <div className="text-center md:text-left">
-                            <div className="flex justify-center md:justify-start gap-1 mb-2">
+                    <div className="flex flex-row items-center justify-center gap-4 mb-12">
+                        <div>
+                            <img
+                                src={avatars}
+                                alt="Member avatars"
+                                className="rounded-full max-w-full"
+                            />
+                        </div>
+                        <div className="text-center md:text-center">
+                            <div className="flex justify-center  gap-1 mb-2">
                                 {[...Array(5)].map((_, i) => (
-                                    <img
-                                        key={i}
-                                        src={star || "/placeholder.svg"}
-                                        alt=""
-                                    />
+                                    <img key={i} src={star} alt="" />
                                 ))}
                             </div>
                             <p className="text-sm text-muted-foreground">

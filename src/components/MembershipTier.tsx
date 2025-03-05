@@ -22,7 +22,7 @@ const tiers = [
 
 export function MembershipTiers() {
     return (
-        <section className="container mx-auto px-4 py-12 lg:py-24 max-w-[74rem]">
+        <section id="membership" className="container mx-auto px-4 sm:p-[var(--space-4)] py-12 lg:py-24 max-w-[74rem]">
             <h2 className="text-preset-2 font-bold tracking-tight text-center mb-12">
                 Membership options
             </h2>

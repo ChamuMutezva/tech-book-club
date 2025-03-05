@@ -7,26 +7,26 @@ import star from "/assets/images/icon-star.svg";
 
 export function Hero() {
     return (
-        <section className="hero mx-auto p-[var(--space-2)] md:px-6 lg:px-8 max-w-[74rem]">
+        <section className="hero mx-auto p-[var(--space-2)] sm:p-[var(--space-4)] lg:px-6 max-w-[74rem]">
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}
                 <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left">
-                    <h1 className="inline-block text-transparent bg-clip-text text-preset-1 text-left text-gradient">
+                    <h1 className="inline-block text-transparent bg-clip-text text-preset-1 text-left text-gradient max-w-[15ch]">
                         Join the ultimate tech book club
                     </h1>
-                    <p className="text-preset-5">
+                    <p className="text-preset-5 max-w-[50ch]">
                         Turn your reading time into learning time with fellow
                         tech enthusiasts. Get curated recommendations, join
                         vibrant discussions, and level up your skills one
                         chapter at a time.
                     </p>
-                    <button
-                        type="button"
-                        className="btn-primary flex items-center justify-center uppercase"
+                    <a
+                        href="#membership"
+                        className="btn-primary flex items-center justify-center uppercase gap-1 max-w-[24.25rem]"
                     >
                         Review membership options <img src={arrowDown} alt="" />
-                    </button>
-                    <div className="ratings-container flex items-center gap-[var(--space-15)] justify-center lg:justify-start">
+                    </a>
+                    <div className="ratings-container flex items-center gap-[var(--space-15)] justify-center lg:justify-start  max-w-[24.25rem]">
                         <div className="flex-[0_0_35%]">
                             <img src={avatars} alt="" className="max-w-full" />
                         </div>

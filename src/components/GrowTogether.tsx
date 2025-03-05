@@ -6,7 +6,7 @@ import check from "/assets/images/icon-check.svg";
 export function GrowTogether() {
     return (
         <section
-            className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-[var(--space-2)] py-[var(--space-3)]
+            className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)]
         flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 max-w-[74rem]"
         >
             <div className="grow-together-content flex-1">
