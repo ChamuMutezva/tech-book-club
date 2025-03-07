@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <Header />
-            <main className="mx-auto">
+            <main className="container mx-auto">
                 <Hero />
                 <GrowTogether />
                 <MembershipTiers />

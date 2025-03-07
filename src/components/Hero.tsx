@@ -11,10 +11,13 @@ export function Hero() {
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}
                 <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left">
-                    <h1 className="inline-block text-transparent bg-clip-text text-preset-1 text-left text-gradient max-w-[15ch]">
+                    <h1
+                        className="inline-block text-transparent bg-clip-text text-preset-1 text-left text-gradient max-w-[15ch]
+                   "
+                    >
                         Join the ultimate tech book club
                     </h1>
-                    <p className="text-preset-5 max-w-[50ch]">
+                    <p className="text-preset-5 max-w-[50ch] dark:text-gray-300">
                         Turn your reading time into learning time with fellow
                         tech enthusiasts. Get curated recommendations, join
                         vibrant discussions, and level up your skills one
@@ -22,7 +25,9 @@ export function Hero() {
                     </p>
                     <a
                         href="#membership"
-                        className="btn-primary flex items-center justify-center uppercase gap-1 max-w-[24.25rem]"
+                        className="btn-primary flex items-center justify-center uppercase gap-1 max-w-[24.25rem]
+                        border-2 border-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-900))]
+                         dark:border-white dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
                         Review membership options <img src={arrowDown} alt="" />
                     </a>
@@ -44,7 +49,7 @@ export function Hero() {
                 </div>
 
                 {/* Image */}
-                <div className="flex-1 mt-8 lg:mt-0">
+                <div className="flex-1 mt-12 lg:mt-0">
                     <picture className="block w-full">
                         <source
                             media="(min-width: 64rem)"

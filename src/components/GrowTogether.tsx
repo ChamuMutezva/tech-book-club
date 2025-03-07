@@ -7,31 +7,47 @@ export function GrowTogether() {
     return (
         <section
             className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)]
-        flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 max-w-[74rem]"
+        flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 max-w-[74rem] dark:bg-[hsl(var(--neutral-900))]"
         >
             <div className="grow-together-content flex-1">
                 <h2 className="text-preset-2">Read together, grow together</h2>
                 <ul className="flex flex-col gap-[var(--space-3)] my-[var(--space-3)]">
                     <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
-                        <img src={check} alt="" />
+                        <img
+                            src={check}
+                            alt=""
+                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                        />
                         <span>
                             Monthly curated tech reads selected by industry
                             experts
                         </span>
                     </li>
                     <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
-                        <img src={check} alt="" />
+                        <img
+                            src={check}
+                            alt=""
+                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                        />
                         <span>
                             Virtual and in-person meetups for deep-dive
                             discussions
                         </span>
                     </li>
                     <li className="text-preset-5 flex items-center  gap-[var(--space-15)]">
-                        <img src={check} alt="" />
+                        <img
+                            src={check}
+                            alt=""
+                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                        />
                         <span>Early access to new tech book releases</span>
                     </li>
                     <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
-                        <img src={check} alt="" />
+                        <img
+                            src={check}
+                            alt=""
+                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                        />
                         <span>
                             Author Q&A sessions with tech thought leaders
                         </span>

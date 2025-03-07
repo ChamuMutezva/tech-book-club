@@ -79,9 +79,16 @@
     --radius-full: 999px;
 }
 
+.text-gradient {
+    background-image: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
 a {
     font-weight: 500;
-    color: #646cff;
     text-decoration: inherit;
 }
 a:hover {
@@ -103,23 +110,30 @@ h1 {
     line-height: 1.1;
 }
 
-button, a {
+button,
+a {
     border-radius: 8px;
-    padding: 1.25em 1em;
     cursor: pointer;
     transition: border-color 0.25s;
 }
-button:hover, a:hover {
+button:hover,
+a:hover {
     border-color: #646cff;
 }
 button:focus,
-button:focus-visible, a:focus,
+button:focus-visible,
+a:focus,
 a:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
 .btn-primary {
-    background-color: hsl(var(--light-salmon-50));
+    /* background-color: hsl(var(--light-salmon-50)); */
+    padding: 1.25em 0.75em;
+}
+
+.btn-secondary {
+    padding: 1.25em 1em;
 }
 
 .text-preset-1 {
@@ -179,19 +193,44 @@ a:focus-visible {
     letter-spacing: -0.5px;
 }
 
-.text-gradient {
-    background-image: var(--text-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
+
 
 .journey {
     background-image: url("/assets/images/pattern-light-bg.svg"),
         url("/assets/images/pattern-glow.svg");
     background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
+}
+
+@media (width >= 40rem) {
+    .text-preset-1 {
+        font-size: 3.875rem;
+    }
+    .text-preset-2 {
+        font-size: 3.125rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
+    }
+    body {
+        background-image: url("/assets/images/pattern-dark-bg.svg");
+    }
+    .journey {
+        background-image: url("/assets/images/pattern-dark-bg.svg"),
+            url("/assets/images/pattern-glow.svg");
+    }
+    button,
+    a {
+        background-color: hsl(var(--neutral-900));
+        color: hsl(var(--neutral-0));
+    }
+    .text-gradient {
+        background-image: var(--gradient);
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -201,14 +240,5 @@ a:focus-visible {
     }
     a:hover {
         color: #747bff;
-    }
-}
-
-@media (width >= 40rem) {
-    .text-preset-1 {
-        font-size: 3.875rem;
-    }
-    .text-preset-2 {
-        font-size: 3.125rem;
     }
 }

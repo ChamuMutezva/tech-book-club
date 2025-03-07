@@ -21,7 +21,7 @@ export function Footer() {
                         <div className="flex items-center justify-center gap-2">
                             <a
                                 href="#membership"
-                                className="flex items-center justify-center border-2 border-[hsl(var(--neutral-0))]"
+                                className="btn-secondary uppercase flex items-center justify-center border-2 border-[hsl(var(--neutral-0))]"
                             >
                                 Review membership options{" "}
                                 <img
