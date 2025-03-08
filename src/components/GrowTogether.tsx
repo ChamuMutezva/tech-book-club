@@ -12,7 +12,7 @@ export function GrowTogether() {
             <div className="grow-together-content flex-1">
                 <h2 className="text-preset-2">Read together, grow together</h2>
                 <ul className="flex flex-col gap-[var(--space-3)] my-[var(--space-3)]">
-                    <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
+                    <li className="text-preset-5 flex items-center gap-[var(--space-15)] animate-fade-in">
                         <img
                             src={check}
                             alt=""

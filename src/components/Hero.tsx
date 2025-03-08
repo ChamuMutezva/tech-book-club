@@ -10,7 +10,7 @@ export function Hero() {
         <section className="hero mx-auto p-[var(--space-2)] sm:p-[var(--space-4)] lg:px-6 max-w-[74rem]">
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}
-                <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left">
+                <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left animate-fade-in-up">
                     <h1
                         className="inline-block text-transparent bg-clip-text text-preset-1 text-left text-gradient max-w-[15ch]
                    "
@@ -29,7 +29,7 @@ export function Hero() {
                         border-2 border-[hsl(var(--neutral-900))] text-[hsl(var(--neutral-900))]
                          dark:border-white dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
-                        Review membership options <img src={arrowDown} alt="" />
+                        Review membership options <img src={arrowDown} className="arrow" alt="" />
                     </a>
                     <div className="ratings-container flex items-center gap-[var(--space-15)] justify-center lg:justify-start  max-w-[24.25rem]">
                         <div className="flex-[0_0_35%]">
@@ -49,7 +49,7 @@ export function Hero() {
                 </div>
 
                 {/* Image */}
-                <div className="flex-1 mt-12 lg:mt-0">
+                <div className="flex-1 mt-12 lg:mt-0 animate-scale-in">
                     <picture className="block w-full">
                         <source
                             media="(min-width: 64rem)"

@@ -66,14 +66,14 @@ export function Footer() {
                             <div className="flex justify-center  items-center gap-4">
                                 <a
                                     href="https://bluesky.com"
-                                    className="text-muted-foreground hover:text-[hsl(var(--neutral-0))] transition-colors"
+                                    className="text-muted-foreground hover:text-[hsl(var(--neutral-0))] transition-colors duration-300 hover:scale-110"
                                 >
                                     <img src={blueSky} alt="" />
                                     <span className="sr-only">Bluesky</span>
                                 </a>
                                 <a
                                     href="https://linkedin.com"
-                                    className="text-muted-foreground hover:text-[hsl(var(--neutral-0))] transition-colors"
+                                    className="text-muted-foreground hover:text-[hsl(var(--neutral-0))] transition-colors duration-300 hover:scale-110"
                                 >
                                     <img src={linkedin} alt="" />
                                     <span className="sr-only">LinkedIn</span>

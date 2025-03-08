@@ -8,7 +8,7 @@ export function BookClub() {
             className="book-club px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)] flex flex-col 
             lg:flex-row lg:items-center gap-8 lg:gap-12 max-w-[74rem] mx-auto"
         >
-            <div className="book-club-content flex-1 flex flex-col gap-4 lg:gap-6">
+            <div className="book-club-content flex-1 flex flex-col gap-4 lg:gap-6 animate-slide-in-left">
                 <h2 className="text-preset-2">
                     Not your average book{" "}
                     <span
@@ -25,7 +25,7 @@ export function BookClub() {
                 </p>
             </div>
             <div
-                className="book-club-image flex-1
+                className="book-club-image flex-1 animate-slide-in-right
              relative before:content-[''] before:absolute before:bottom-[2rem] before:right-[2rem] before:w-[120px]
              before:h-[138px] md:before:bg-[url('/assets/images/logos-tech.svg')] before:bg-cover
                           before:bg-center before:z-[1]  lg:before:left-[-5rem]"

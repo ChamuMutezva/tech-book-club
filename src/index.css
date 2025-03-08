@@ -127,10 +127,18 @@ a:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-.btn-primary {   
+.btn-primary {
     padding: 1.25em 0.75em;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
 }
-
+.dark .btn-primary:hover {
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
 .btn-secondary {
     padding: 1.25em 1em;
 }
@@ -223,17 +231,106 @@ a:focus-visible {
 }
 
 .dark .logo {
-    filter: invert(1) brightness(10) hue-rotate(100deg) saturate(100%) contrast(100%);
+    filter: invert(1) brightness(10) hue-rotate(100deg) saturate(100%)
+        contrast(100%);
 }
 .dark .grow-together {
-  background-color: hsl(var(--neutral-900));
+    background-color: hsl(var(--neutral-900));
 }
 .dark .card {
-  background-color: hsl(var(--neutral-900));
+    background-color: hsl(var(--neutral-900));
 }
-.dark .check {
-    filter: invert(1) brightness(100) hue-rotate(100deg) saturate(100%) contrast(100%);
+.dark .check,
+.dark .arrow {
+    filter: invert(1) brightness(100) hue-rotate(100deg) saturate(100%)
+        contrast(100%);
 }
+.dark .client {
+    color: hsl(var(--neutral-0));
+    opacity: 0.75;
+}
+
+/* Add this to your CSS */
+.filter-amber {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(38%) saturate(7025%)
+        hue-rotate(325deg) brightness(107%) contrast(101%);
+}
+
+/* Optional: Animation for the featured card */
+@keyframes pulse-border {
+    0%,
+    100% {
+        border-color: rgba(252, 211, 77, 0.7);
+    }
+    50% {
+        border-color: rgba(251, 191, 36, 1);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out both;
+}
+
+.animate-scale-in {
+    animation: scale-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out both;
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out both;
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pulse-border {
+    animation: pulse-border 2s infinite;
+}
+
 @media (width >= 40rem) {
     .text-preset-1 {
         font-size: 3.875rem;

@@ -39,8 +39,7 @@ export function DarkModeToggle() {
       <span className="sr-only">Toggle dark mode</span>
       <button
         type="button"
-        onClick={toggleDarkMode}
-        aria-pressed={darkMode}
+        onClick={toggleDarkMode}       
         aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
         className={`
                     relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 

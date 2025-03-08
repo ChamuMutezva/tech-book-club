@@ -18,7 +18,7 @@ export function Testimonials() {
                     solitary activity into an enriching community experience.
                     The discussions are gold!"
                 </p>
-                <p className="text-center text-preset-5 text-[hsl(var(--neutral-700))] dark:text-[hsl(var(--neutral-0))]">
+                <p className="text-center text-preset-5 text-[hsl(var(--neutral-700))] dark:text-[hsl(var(--neutral-0))] client">
                     Sarah Chen, Software Architect
                 </p>
             </div>
