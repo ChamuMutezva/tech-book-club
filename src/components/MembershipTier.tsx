@@ -30,16 +30,13 @@ export function MembershipTiers() {
                 Membership options
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {tiers.map((tier, index) => (
+                {tiers.map((tier) => (
                     <div
                         className={`card flex flex-col gap-[var(--space-3)] p-6 border-[1px]
                              border-[hsl(var(--neutral-200))] dark:border-gray-700
                              transform hover:-translate-y-1  rounded-2xl
                               dark:bg-gray-800 dark:text-white
-                            ${
-                                index === 1 &&
-                                "bg-gradient-to-b from-[#faf5f3] to-[#e6d1df] border-[#ffe2d1] shadow-lg dark:from-gray-700 dark:to-gray-900 dark:border-gray-600 "
-                            }`}
+                           `}
                         key={tier.name}
                     >
                         <div className="flex flex-col gap-[var(--space-3)] card-header">
@@ -66,7 +63,7 @@ export function MembershipTiers() {
                                         <img
                                             src={check}
                                             alt=""
-                                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                                            className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                                         />
                                         <span className="text-preset-5 dark:text-gray-300">
                                             {feature}

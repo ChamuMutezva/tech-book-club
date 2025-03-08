@@ -16,7 +16,7 @@ export function GrowTogether() {
                         <img
                             src={check}
                             alt=""
-                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                            className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
                         <span>
                             Monthly curated tech reads selected by industry
@@ -27,7 +27,7 @@ export function GrowTogether() {
                         <img
                             src={check}
                             alt=""
-                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                            className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
                         <span>
                             Virtual and in-person meetups for deep-dive
@@ -38,7 +38,7 @@ export function GrowTogether() {
                         <img
                             src={check}
                             alt=""
-                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                            className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
                         <span>Early access to new tech book releases</span>
                     </li>
@@ -46,7 +46,7 @@ export function GrowTogether() {
                         <img
                             src={check}
                             alt=""
-                            className="dark:invert dark:brightness-10 dark:hue-rotate-10"
+                            className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
                         <span>
                             Author Q&A sessions with tech thought leaders
