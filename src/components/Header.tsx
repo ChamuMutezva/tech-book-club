@@ -9,9 +9,16 @@ export function Header() {
                     href="/"
                     aria-label="Book tech club - home"
                     className="inline-block logo hover:opacity-75 transition-opacity duration-200 
-                focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                     focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 >
-                    <img src={bookTechLogo} alt="" width={193} height={36} />
+
+                    <img
+                        src={bookTechLogo}
+                        alt=""
+                        width={193}
+                        height={36}
+                        className="dark:invert dark:brightness-[0.85] dark:hue-rotate-180"
+                    />
                 </a>
                 <DarkModeToggle />
             </nav>

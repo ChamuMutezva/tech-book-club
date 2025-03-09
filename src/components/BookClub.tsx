@@ -5,7 +5,7 @@ import notAverageDesktop from "/assets/images/image-not-average-desktop.webp";
 export function BookClub() {
     return (
         <section
-            className="book-club px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)] flex flex-col 
+            className="book-club px-4 py-6 sm:p-8 flex flex-col 
             lg:flex-row lg:items-center gap-8 lg:gap-12 max-w-[74rem] mx-auto"
         >
             <div className="book-club-content flex-1 flex flex-col gap-4 lg:gap-6 animate-slide-in-left">
@@ -17,11 +17,12 @@ export function BookClub() {
                         club
                     </span>
                 </h2>
-                <p className="text-preset-5 max-w-[42ch]">
+                <p className="text-preset-5 max-w-[40ch]">
                     Connect with a community that speaks your language - from
-                    Python to TypeScript and everything in between. Our
-                    discussions blend technical depth with practical
-                    applications.
+                    <span className="font-bold"> Python</span> to{" "}
+                    <span className="font-bold"> TypeScript </span>
+                    and everything in between. Our discussions blend technical
+                    depth with practical applications.
                 </p>
             </div>
             <div
@@ -40,7 +41,7 @@ export function BookClub() {
                         srcSet={notAverageTablet}
                     />
                     <img
-                        className="book-club-image rounded-[var(--radius-12)]"
+                        className="book-club-image rounded-xl"
                         src={notAverageMobile}
                         alt="Tech book club members discussing a book"
                     />

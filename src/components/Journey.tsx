@@ -2,7 +2,7 @@
 export function Journey() {
     return (
         <section
-            className={`journey px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)] lg:py-[var(--space-10)] 
+            className={`journey px-4 py-6 sm:p-8 lg:py-20] 
                 flex flex-col items-center gap-8 lg:gap-10 mx-auto max-w-[74rem]`}
         >
             <h2 className="text-[3.125rem] font-[900] text-center max-w-[15ch]">
@@ -16,7 +16,7 @@ export function Journey() {
                           before:bg-center before:opacity-50 before:z-[-1] before:rotate-130 md:before:top-0 md:before:rotate-0"
                 >
                     <span
-                        className="border-2 border-[hsl(var(--neutral-700))] rounded-[var(--radius-6)]
+                        className="border-2 border-[hsl(var(--neutral-700))] rounded-md
                     text-2xl font-[700] w-10 h-10 flex items-center justify-center"
                     >
                         1
@@ -30,7 +30,7 @@ export function Journey() {
                           before:bg-center before:opacity-50 before:z-[-1] before:rotate-130 md:before:top-0 md:before:rotate-0"
                 >
                     <span
-                        className="border-2 border-[hsl(var(--neutral-700))] rounded-[var(--radius-6)]
+                        className="border-2 border-[hsl(var(--neutral-700))] rounded-md
                      text-2xl font-[700] w-10 h-10 flex items-center justify-center"
                     >
                         2
@@ -46,7 +46,7 @@ export function Journey() {
                           before:bg-center before:opacity-50 before:z-[-1] before:rotate-130 md:before:top-0 md:before:rotate-0"
                 >
                     <span
-                        className="border-2 border-[hsl(var(--neutral-700))] rounded-[var(--radius-6)]
+                        className="border-2 border-[hsl(var(--neutral-700))] rounded-md
                      text-2xl font-[700] w-10 h-10 flex items-center justify-center"
                     >
                         3
@@ -55,7 +55,7 @@ export function Journey() {
                 </li>
                 <li className="flex flex-col items-start gap-4">
                     <span
-                        className="border-2 border-[hsl(var(--neutral-700))] rounded-[var(--radius-6)]
+                        className="border-2 border-[hsl(var(--neutral-700))] rounded-md
                      text-2xl font-[700] w-10 h-10 flex items-center justify-center"
                     >
                         4

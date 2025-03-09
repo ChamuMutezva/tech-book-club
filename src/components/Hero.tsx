@@ -6,11 +6,11 @@ export function Hero() {
     return (
         <section
             aria-label="Book Club Introduction"
-            className="hero mx-auto p-4 sm:p-8 lg:px-6 max-w-[74rem]"
+            className="hero mx-auto p-4 sm:p-8 lg:px-6 lg:pb-24 max-w-[74rem]"
         >
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}
-                <div className="flex-1 flex flex-col gap-[var(--space-3)] text-center lg:text-left animate-fade-in-up">
+                <div className="flex-1 flex flex-col gap-6 text-center lg:text-left animate-fade-in-up">
                     <h1
                         className="text-transparent bg-clip-text text-preset-1 text-left text-gradient max-w-[15ch]
                    "

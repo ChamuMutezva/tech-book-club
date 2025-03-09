@@ -7,17 +7,19 @@ import { GrowTogether } from "./components/GrowTogether";
 import { BookClub } from "./components/BookClub";
 import { Journey } from "./components/Journey";
 import { Testimonials } from "./components/Testimonials";
+import { SkipLink } from "./components/SkipLink";
 
 function App() {
     return (
         <>
+            <SkipLink />
             <Header />
             <main className="container mx-auto">
                 <Hero />
                 <GrowTogether />
-                <MembershipTiers />
                 <BookClub />
                 <Journey />
+                <MembershipTiers />
                 <Testimonials />
             </main>
             <Footer />

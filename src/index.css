@@ -50,33 +50,6 @@
     --light-salmon-50: 22.2 100% 96.9%;
     --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
     --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
-
-    --space-0: 0;
-    --space-025: 2px;
-    --space-05: 4px;
-    --space-075: 6px;
-    --space-1: 8px;
-    --space-15: 12px;
-    --space-2: 16px;
-    --space-3: 24px;
-    --space-4: 32px;
-    --space-5: 40px;
-    --space-6: 48px;
-    --space-7: 56px;
-    --space-8: 64px;
-    --space-9: 72px;
-    --space-10: 80px;
-
-    --radius-0: 0;
-    --radius-4: 4px;
-    --radius-6: 6px;
-    --radius-8: 8px;
-    --radius-10: 10px;
-    --radius-12: 12px;
-    --radius-16: 16px;
-    --radius-20: 20px;
-    --radius-24: 24px;
-    --radius-full: 999px;
 }
 
 .text-gradient {
@@ -250,7 +223,6 @@ a:focus-visible {
     opacity: 0.75;
 }
 
-/* Add this to your CSS */
 .filter-amber {
     filter: brightness(0) saturate(100%) invert(91%) sepia(38%) saturate(7025%)
         hue-rotate(325deg) brightness(107%) contrast(101%);
@@ -271,6 +243,9 @@ a:focus-visible {
         #374151,
         #92400e
     );
+}
+.membership {
+    scroll-margin-top: 2rem;
 }
 
 /* Optional: Animation for the featured card */
@@ -374,6 +349,7 @@ a:focus-visible {
         background-color: hsl(var(--neutral-900));
         color: hsl(var(--neutral-0));
     }
+
     .text-gradient {
         background-image: var(--gradient);
     }

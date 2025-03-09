@@ -51,7 +51,8 @@ export function MembershipTiers() {
     return (
         <section
             id="membership"
-            className="container mx-auto px-4 sm:p-[var(--space-4)] py-12 lg:py-24 max-w-[61rem]"
+            tabIndex={-1}
+            className="container membership mx-auto px-4 sm:p-8 py-12 lg:py-24 max-w-[61rem]"
         >
             <h2 className="text-preset-2 font-bold tracking-tight text-center mb-12 dark:text-white">
                 Membership options
@@ -59,7 +60,7 @@ export function MembershipTiers() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {tiers.map((tier) => (
                     <div
-                        className={`card flex flex-col gap-[var(--space-3)] p-6 border-[1px]
+                        className={`card flex flex-col gap-6 p-6 border-[1px]
                                                           ${
                                                               tier.featured
                                                                   ? "border-[#ffe2d1] dark:border-amber-700 shadow-lg transform hover:-translate-y-2"
@@ -79,7 +80,7 @@ export function MembershipTiers() {
                             `}
                         key={tier.name}
                     >
-                        <div className="flex flex-col gap-[var(--space-3)] card-header">
+                        <div className="flex flex-col gap-6 card-header">
                             <h3 className={`card-title text-preset-4 `}>
                                 {tier.name}
                             </h3>
@@ -87,7 +88,9 @@ export function MembershipTiers() {
                                 {tier.price}
                                 {tier.price !== "Custom" && (
                                     <span className={`text-preset-5`}>
-                                        /month
+                                        <span aria-hidden="true">/</span> 
+                                        <span className="sr-only">per</span> 
+                                        month
                                     </span>
                                 )}
                             </p>
@@ -98,7 +101,7 @@ export function MembershipTiers() {
                                 {tier.features.map((feature) => (
                                     <li
                                         key={feature}
-                                        className="flex items-center gap-[var(--space-15)]"
+                                        className="flex items-center gap-3"
                                     >
                                         <img
                                             src={check}
@@ -124,6 +127,7 @@ export function MembershipTiers() {
                                 transition-all duration-300 hover:shadow-lg`}
                             >
                                 {tier.cta}
+                                <span className="sr-only">{`for ${tier.name}`}</span>
                             </button>
                         </div>
                         {tier.featured && (

@@ -6,13 +6,13 @@ import check from "/assets/images/icon-check.svg";
 export function GrowTogether() {
     return (
         <section
-            className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-[var(--space-2)] py-[var(--space-3)] sm:p-[var(--space-4)]
+            className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-4 py-6 sm:p-8 lg:py-12
         flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 max-w-[74rem] dark:bg-[hsl(var(--neutral-900))]"
         >
             <div className="grow-together-content flex-1">
                 <h2 className="text-preset-2">Read together, grow together</h2>
-                <ul className="flex flex-col gap-[var(--space-3)] my-[var(--space-3)]">
-                    <li className="text-preset-5 flex items-center gap-[var(--space-15)] animate-fade-in">
+                <ul className="flex flex-col gap-6 my-6">
+                    <li className="text-preset-5 flex items-center gap-3 animate-fade-in">
                         <img
                             src={check}
                             alt=""
@@ -23,7 +23,7 @@ export function GrowTogether() {
                             experts
                         </span>
                     </li>
-                    <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
+                    <li className="text-preset-5 flex items-center gap-3">
                         <img
                             src={check}
                             alt=""
@@ -34,7 +34,7 @@ export function GrowTogether() {
                             discussions
                         </span>
                     </li>
-                    <li className="text-preset-5 flex items-center  gap-[var(--space-15)]">
+                    <li className="text-preset-5 flex items-center  gap-3">
                         <img
                             src={check}
                             alt=""
@@ -42,7 +42,7 @@ export function GrowTogether() {
                         />
                         <span>Early access to new tech book releases</span>
                     </li>
-                    <li className="text-preset-5 flex items-center gap-[var(--space-15)]">
+                    <li className="text-preset-5 flex items-center gap-3">
                         <img
                             src={check}
                             alt=""
