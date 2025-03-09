@@ -3,11 +3,18 @@ import bookTechLogo from "/assets/images/logo.svg";
 
 export function Header() {
     return (
-        <header className="container flex items-center justify-between mx-auto px-[var(--space-2)] py-[var(--space-3)] max-w-[74rem] sm:p-[var(--space-4)]">
-            <a href="/" aria-label="book tech club" className="inline-block logo">
-                <img  src={bookTechLogo} alt="" className="dark:invert dark:brightness-100 dark:hue-rotate-10" />
-            </a>
-            <DarkModeToggle />
+        <header className="container mx-auto px-4 py-6 w- max-w-[74rem] sm:p-8">
+            <nav className="flex items-center justify-between w-full">
+                <a
+                    href="/"
+                    aria-label="Book tech club - home"
+                    className="inline-block logo hover:opacity-75 transition-opacity duration-200 
+                focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                >
+                    <img src={bookTechLogo} alt="" width={193} height={36} />
+                </a>
+                <DarkModeToggle />
+            </nav>
         </header>
     );
 }
