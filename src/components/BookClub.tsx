@@ -5,7 +5,7 @@ import notAverageDesktop from "/assets/images/image-not-average-desktop.webp";
 export function BookClub() {
     return (
         <section
-            className="book-club px-4 py-6 sm:p-8 flex flex-col 
+            className="book-club px-4 py-6 lg:py-20 sm:p-8 flex flex-col 
             lg:flex-row lg:items-center gap-8 lg:gap-12 lg:px-0 max-w-[74rem] mx-auto"
         >
             <div className="book-club-content flex-1 flex flex-col gap-4 lg:gap-6 animate-slide-in-left">

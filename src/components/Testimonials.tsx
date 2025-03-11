@@ -3,7 +3,7 @@ import star from "/assets/images/icon-star.svg";
 export function Testimonials() {
     return (
         <section
-            className="testimonials px-4 py-8 sm:p-8
+            className="testimonials px-4 py-8 sm:p-8 lg:py-20
         flex flex-col items-center justify-center gap-8"
         >
             <div className="stars flex sm:justify-center">
