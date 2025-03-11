@@ -6,7 +6,7 @@ export function Hero() {
     return (
         <section
             aria-label="Book Club Introduction"
-            className="hero mx-auto p-4 sm:p-8 lg:px-6 lg:pb-24 max-w-[74rem]"
+            className="hero mx-auto p-4 sm:p-8 lg:px-0 lg:pb-24  lg:pt-12 max-w-[74rem]"
         >
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Content */}

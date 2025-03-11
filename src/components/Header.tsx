@@ -3,7 +3,7 @@ import bookTechLogo from "/assets/images/logo.svg";
 
 export function Header() {
     return (
-        <header className="container mx-auto px-4 py-6 w- max-w-[74rem] sm:p-8">
+        <header className="container mx-auto px-4 py-6 w- max-w-[74rem] sm:p-8 lg:px-0">
             <nav className="flex items-center justify-between w-full">
                 <a
                     href="/"
