@@ -13,7 +13,7 @@ export function Testimonials() {
             </div>
             <h2 className="sm:text-center sr-only">Testimonials</h2>
             <div className="testimonial flex flex-col justify-center items-center gap-8">
-                <p className="text-left lg:text-center text-preset-3 max-w-[40ch]">
+                <p className="text-left lg:text-center text-preset-3mb max-w-[40ch]">
                     "This book club transformed my technical reading from a
                     solitary activity into an enriching community experience.
                     The discussions are gold!"
