@@ -7,7 +7,7 @@ export function GrowTogether() {
     return (
         <section
             className="grow-together mx-auto bg-[hsl(var(--neutral-0))] px-4 py-6 sm:p-8 lg:py-12 lg:px-0
-        flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 max-w-[74rem] dark:bg-[hsl(var(--neutral-900))]"
+        flex flex-col lg:flex-row-reverse lg:items-center lg:gap-16 max-w-[74rem] dark:bg-[hsl(var(--neutral-900))]"
         >
             <div className="grow-together-content flex-1">
                 <h2 className="text-preset-2">Read together, grow together</h2>
@@ -18,7 +18,7 @@ export function GrowTogether() {
                             alt=""
                             className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
-                        <span>
+                        <span className="max-w-[30ch]">
                             Monthly curated tech reads selected by industry
                             experts
                         </span>
@@ -29,7 +29,7 @@ export function GrowTogether() {
                             alt=""
                             className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
-                        <span>
+                        <span className="max-w-[30ch]">
                             Virtual and in-person meetups for deep-dive
                             discussions
                         </span>
@@ -40,7 +40,7 @@ export function GrowTogether() {
                             alt=""
                             className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
-                        <span>Early access to new tech book releases</span>
+                        <span className="max-w-[30ch]">Early access to new tech book releases</span>
                     </li>
                     <li className="text-preset-5 flex items-center gap-3">
                         <img
@@ -48,7 +48,7 @@ export function GrowTogether() {
                             alt=""
                             className="check dark:invert dark:brightness-10 dark:hue-rotate-10"
                         />
-                        <span>
+                        <span className="max-w-[30ch]">
                             Author Q&A sessions with tech thought leaders
                         </span>
                     </li>

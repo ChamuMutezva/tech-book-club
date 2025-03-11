@@ -2,10 +2,10 @@
 export function Journey() {
     return (
         <section
-            className={`journey px-4 py-6 sm:p-8 lg:py-20 lg:px-0
+            className={`journey px-4 py-6 sm:p-8 lg:py-25 lg:px-0
                 flex flex-col items-center gap-8 lg:gap-10 mx-auto max-w-[74rem]`}
         >
-            <h2 className="text-[3.125rem] font-[900] text-center max-w-[15ch]">
+            <h2 className="text-[3.125rem] font-[400] text-center max-w-[15ch]">
                 Your tech reading journey
             </h2>
             <ol className="flex flex-col md:flex-row lg:items-center gap-8 lg:gap-12">
