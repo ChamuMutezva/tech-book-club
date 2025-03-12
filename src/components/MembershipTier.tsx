@@ -54,10 +54,10 @@ export function MembershipTiers() {
             tabIndex={-1}
             className="container membership mx-auto px-4 sm:p-8 py-12 lg:py-30 max-w-[61rem]"
         >
-            <h2 className="text-preset-2 font-bold tracking-tight text-center mb-12 dark:text-white">
+            <h2 className="text-preset-2 font-bold tracking-tight text-center lg:mt-8 mb-12 dark:text-white">
                 Membership options
             </h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2 lg:mt-8 lg:grid-cols-3">
                 {tiers.map((tier) => (
                     <div
                         className={`card flex flex-col gap-6 p-6 border-[1px]

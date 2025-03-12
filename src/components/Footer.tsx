@@ -34,21 +34,21 @@ export function Footer() {
                     </div>
 
                     {/* Ratings Section */}
-                    <div className="flex flex-row items-center justify-center gap-4 mb-12">
+                    <div className="flex flex-row items-center justify-center gap-2 mx-auto mb-12 max-w-96">
                         <div>
                             <img
                                 src={avatars}
                                 alt="Member avatars"
-                                className="rounded-full max-w-full"
+                                className="rounded-full max-w-24"
                             />
                         </div>
-                        <div className="text-center md:text-center">
-                            <div className="flex justify-center  gap-1 mb-2">
+                        <div className="text-center md:text-center flex-4/5">
+                            <div className="flex justify-center lg:justify-start  gap-1 mb-2">
                                 {[...Array(5)].map((_, i) => (
                                     <img key={i} src={star} alt="" />
                                 ))}
                             </div>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-preset-7 text-muted-foreground">
                                 200+ developers joined already
                             </p>
                         </div>
